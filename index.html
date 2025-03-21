@@ -445,7 +445,33 @@
       </div>
     </footer>
     <div class="backdrop is-open">
-      <div class="modal"></div>
+      <div class="modal">
+        <button type="button" class="modal-button-close">
+          <svg width="8" height="8" class="icon icon-cross">
+            <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg>
+        </button>
+        <p class="modal-text">Leave your contacts and we will call you back</p>
+        <form action="">
+          <div class="form-container">
+            <label for="user-name" class="name-label">Name</label>
+            <div class="name-input">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="user-name-input"
+              />
+              <svg width="18" height="24" class="icon icon-person">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <div class="form-container">
+              <label for="user-phone" class="name-label">Phone</label>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
   </body>
 </html>
