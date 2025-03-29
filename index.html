@@ -22,7 +22,7 @@
     <header class="body-header">
       <div class="container flex">
         <nav class="nav-container">
-          <a href="./index.html" class="company-title"
+          <a href="./index.html" class="company-title company-title--header"
             >Web<span class="company-title-studio">Studio</span></a
           >
 
@@ -404,7 +404,7 @@
     <footer class="footer-class">
       <div class="footer-flex">
         <div class="footer-block">
-          <a href="./index.html" class="company-title-footer"
+          <a href="./index.html" class="company-title company-title--footer"
             >Web<span class="company-title-studio-bottom">Studio</span></a
           >
 
@@ -454,7 +454,7 @@
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form action="">
           <div class="form-container">
-            <label for="user-name" class="name-label">Name</label>
+            <label for="user-name" class="name-label label">Name</label>
             <div class="name-input">
               <input
                 type="text"
@@ -462,14 +462,56 @@
                 name="user-name"
                 class="user-name-input"
               />
-              <svg width="18" height="24" class="icon icon-person">
+              <svg width="18" height="24" class="icon icon-person icon-modal">
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
-            <div class="form-container">
-              <label for="user-phone" class="name-label">Phone</label>
+
+            <label for="user-phone" class="phone-label label">Phone</label>
+            <div class="name-input">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="user-name-input"
+              />
+              <svg width="18" height="24" class="icon icon-person icon-modal">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+
+            <label for="user-phone" class="email-label label">E-mail</label>
+            <div class="name-input">
+              <input
+                type="text"
+                id="user-name"
+                name="user-name"
+                class="user-name-input"
+              />
+              <svg width="18" height="24" class="icon icon-person icon-modal">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+            <div class="name-input">
+              <label for="comment" class="comment-label label">Comment</label>
+
+              <textarea
+                class="comment-input"
+                name="comment"
+                placeholder="Text input"
+              ></textarea>
             </div>
           </div>
+          <div class="agreement">
+            <input type="checkbox" name="hobby" value="reading" />
+            <p class="agreement-text">
+              I accept the terms and conditions of the
+              <a class="pp-link" href="">Privacy Policy</a>
+            </p>
+          </div>
+          <button type="button" class="button-order-service">
+            Order Service
+          </button>
         </form>
       </div>
     </div>
