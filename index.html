@@ -458,7 +458,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-ope">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-button-close">
           <svg width="8" height="8" class="icon icon-cross">
@@ -467,9 +467,8 @@
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
         <form action="" class="form-container">
-          <!-- <div class="form-container"> -->
           <div class="name-input">
-            <label for="user-name" class="name-label label">Name</label>
+            <label for="user-name" class="label">Name</label>
 
             <div class="container-input">
               <input
@@ -485,7 +484,7 @@
           </div>
 
           <div class="name-input">
-            <label for="user-phone" class="phone-label label">Phone</label>
+            <label for="user-phone" class="label">Phone</label>
 
             <div class="container-input">
               <input
@@ -501,7 +500,7 @@
           </div>
 
           <div class="name-input">
-            <label for="user-phone" class="email-label label">E-mail</label>
+            <label for="user-phone" class="label">Email</label>
 
             <div class="container-input">
               <input
@@ -515,22 +514,35 @@
               </svg>
             </div>
           </div>
-          <div class="name-input">
-            <label for="comment" class="comment-label label">Comment</label>
+          <div class="name-input comment-container">
+            <label for="user-comment" class="label">Comment</label>
 
             <textarea
+              id="user-comment"
               class="comment-input"
-              name="comment"
+              name="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
 
           <div class="agreement">
-            <input type="checkbox" name="hobby" value="reading" />
-            <p class="agreement-text">
+            <input
+              type="checkbox"
+              value="reading"
+              id="user-privacy"
+              value="true"
+              name="user-privacy"
+              class="agreement-input visuallyhidden"
+            />
+            <label class="agreement-text" for="user-privacy">
+              <span class="span-privacy"
+                ><svg width="10" height="8" class="icon-checkbox">
+                  <use href="./images/icons.svg#icon-checkbox"></use></svg
+              ></span>
               I accept the terms and conditions of the
+
               <a class="pp-link" href="">Privacy Policy</a>
-            </p>
+            </label>
           </div>
           <button type="button" class="button-order-service">Send</button>
         </form>
