@@ -413,7 +413,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="footer-block footer-media">
+        <div class="footer-media">
           <p class="footer-media-text">Social media</p>
           <ul class="social-container soc-container">
             <li class="social-container-item">
@@ -442,9 +442,23 @@
             </li>
           </ul>
         </div>
+        <div class="footer-input">
+          <p class="footer-media-text">Subscribe</p>
+          <div class="align-subscribe">
+            <input class="subscribe-input" type="text" />
+            <button class="subscribe-button">
+              <div class="subscribe-button-container">
+                <p class="button-text">Subscribe</p>
+                <svg width="24" height="24" class="subscribe-svg">
+                  <use href="./images/icons.svg#icon-subscribe"></use>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-ope">
       <div class="modal">
         <button type="button" class="modal-button-close">
           <svg width="8" height="8" class="icon icon-cross">
@@ -452,10 +466,12 @@
           </svg>
         </button>
         <p class="modal-text">Leave your contacts and we will call you back</p>
-        <form action="">
-          <div class="form-container">
+        <form action="" class="form-container">
+          <!-- <div class="form-container"> -->
+          <div class="name-input">
             <label for="user-name" class="name-label label">Name</label>
-            <div class="name-input">
+
+            <div class="container-input">
               <input
                 type="text"
                 id="user-name"
@@ -466,9 +482,12 @@
                 <use href="./images/icons.svg#icon-person"></use>
               </svg>
             </div>
+          </div>
 
+          <div class="name-input">
             <label for="user-phone" class="phone-label label">Phone</label>
-            <div class="name-input">
+
+            <div class="container-input">
               <input
                 type="text"
                 id="user-name"
@@ -479,9 +498,12 @@
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </div>
+          </div>
 
+          <div class="name-input">
             <label for="user-phone" class="email-label label">E-mail</label>
-            <div class="name-input">
+
+            <div class="container-input">
               <input
                 type="text"
                 id="user-name"
@@ -489,19 +511,20 @@
                 class="user-name-input"
               />
               <svg width="18" height="24" class="icon icon-person icon-modal">
-                <use href="./images/icons.svg#icon-person"></use>
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
-            <div class="name-input">
-              <label for="comment" class="comment-label label">Comment</label>
-
-              <textarea
-                class="comment-input"
-                name="comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
           </div>
+          <div class="name-input">
+            <label for="comment" class="comment-label label">Comment</label>
+
+            <textarea
+              class="comment-input"
+              name="comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
           <div class="agreement">
             <input type="checkbox" name="hobby" value="reading" />
             <p class="agreement-text">
@@ -509,9 +532,7 @@
               <a class="pp-link" href="">Privacy Policy</a>
             </p>
           </div>
-          <button type="button" class="button-order-service">
-            Order Service
-          </button>
+          <button type="button" class="button-order-service">Send</button>
         </form>
       </div>
     </div>
