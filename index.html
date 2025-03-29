@@ -444,7 +444,8 @@
         </div>
         <div class="footer-input">
           <p class="footer-media-text">Subscribe</p>
-          <div class="align-subscribe">
+          <form action="" class="align-subscribe">
+            <!-- <div class="align-subscribe"> -->
             <input class="subscribe-input" type="text" />
             <button class="subscribe-button">
               <div class="subscribe-button-container">
@@ -454,11 +455,12 @@
                 </svg>
               </div>
             </button>
-          </div>
+            <!-- </div> -->
+          </form>
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop is-ope">
       <div class="modal">
         <button type="button" class="modal-button-close">
           <svg width="8" height="8" class="icon icon-cross">
@@ -528,11 +530,10 @@
           <div class="agreement">
             <input
               type="checkbox"
-              value="reading"
               id="user-privacy"
               value="true"
               name="user-privacy"
-              class="agreement-input visuallyhidden"
+              class="agreement-input visually-hidden"
             />
             <label class="agreement-text" for="user-privacy">
               <span class="span-privacy"
