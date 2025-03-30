@@ -747,9 +747,17 @@ img {
   border-radius: 4px;
   background: #4d5ae5;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
 }
 .subscribe-button-container {
   display: flex;
@@ -774,6 +782,7 @@ img {
 
 .align-subscribe {
   display: flex;
+  gap: 24px;
 }
 
 .agreement-input:checked .span-privacy {
@@ -794,4 +803,28 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.agreement-input:checked + .agreement-text > .span-privacy {
+  background-color: #404bbf;
+  border: none;
+  fill: #f4f4fd;
+}
+
+.subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+.subscribe-input::placeholder {
+  color: #ffffff;
 }
