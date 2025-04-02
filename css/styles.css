@@ -733,16 +733,6 @@ img {
   align-items: center;
 }
 
-.subscribe-input {
-  border: 1px solid #fff;
-  border-radius: 4px;
-  width: 264px;
-  height: 40px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  background-color: transparent;
-  margin-right: 24px;
-}
-
 .subscribe-button {
   border-radius: 4px;
   background: #4d5ae5;
@@ -828,4 +818,13 @@ img {
 
 .subscribe-input::placeholder {
   color: #ffffff;
+}
+
+.subscribe-button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+  background-color: #404bbf;
 }
